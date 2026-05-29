@@ -79,7 +79,7 @@ export function OrderTrackingPage({
   const statusColor = tracking ? getStatusColor(tracking.currentStatus) : '#73C2FB';
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <button
@@ -155,17 +155,17 @@ export function OrderTrackingPage({
         {isDelivered && (
           <div 
             className="bg-white rounded-lg shadow-sm p-6 mb-6 border-2"
-            style={{ borderColor: '#50C878' }}
+            style={{ borderColor: '#7B4FA6' }}
           >
             <div className="flex items-center gap-4">
               <div 
                 className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                style={{ backgroundColor: '#50C878' }}
+                style={{ backgroundColor: '#7B4FA6' }}
               >
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h2 className="text-gray-900 mb-1" style={{ color: '#50C878' }}>
+                <h2 className="text-gray-900 mb-1" style={{ color: '#7B4FA6' }}>
                   ¡Pedido Entregado!
                 </h2>
                 <p className="text-gray-600">
@@ -200,7 +200,7 @@ export function OrderTrackingPage({
                       title="Copiar número de pedido"
                     >
                       {copiedOrder ? (
-                        <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                        <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                       ) : (
                         <Copy className="w-4 h-4 text-gray-600" />
                       )}
@@ -222,7 +222,7 @@ export function OrderTrackingPage({
                         title="Copiar número de seguimiento"
                       >
                         {copiedTracking ? (
-                          <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                          <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                         ) : (
                           <Copy className="w-4 h-4 text-gray-600" />
                         )}
@@ -257,7 +257,7 @@ export function OrderTrackingPage({
                   <div>
                     <p className="text-sm text-gray-600 mb-1">Entrega Estimada</p>
                     <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" style={{ color: '#F0E68C' }} />
+                      <Calendar className="w-4 h-4" style={{ color: '#C9A84C' }} />
                       <span className="text-gray-900">{formatDate(tracking.estimatedDelivery)}</span>
                     </div>
                   </div>

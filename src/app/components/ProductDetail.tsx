@@ -141,7 +141,7 @@ export function ProductDetail({
               </div>
               <div className="text-sm text-gray-600">
                 {isLowStock ? (
-                  <span style={{ color: '#F0E68C' }}>
+                  <span style={{ color: '#C9A84C' }}>
                     Solo {maxStock} disponibles
                   </span>
                 ) : (
@@ -160,7 +160,7 @@ export function ProductDetail({
             <button
               onClick={handleAddToCart}
               className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               Añadir {quantity > 1 ? `${quantity} unidades` : ''} al carrito
             </button>
@@ -176,7 +176,7 @@ export function ProductDetail({
             <div className="text-sm text-center">
               Estado: {' '}
               {product.stock && product.stock <= 5 ? (
-                <span style={{ color: '#F0E68C' }}>
+                <span style={{ color: '#C9A84C' }}>
                   ¡Solo quedan {product.stock} unidades!
                 </span>
               ) : (

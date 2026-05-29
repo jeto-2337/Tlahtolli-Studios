@@ -84,7 +84,7 @@ export function CartPage({
           <div className="bg-white rounded-lg shadow-sm p-12 text-center">
             <div 
               className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center"
-              style={{ backgroundColor: '#FFFDD0' }}
+              style={{ backgroundColor: '#F4F0F8' }}
             >
               <ShoppingBag className="w-12 h-12 text-gray-400" />
             </div>
@@ -95,7 +95,7 @@ export function CartPage({
             <button
               onClick={onBackToShop}
               className="px-8 py-3 rounded-lg text-white transition-all hover:shadow-md inline-flex items-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <Sparkles className="w-5 h-5" />
               Explorar productos
@@ -135,7 +135,7 @@ export function CartPage({
                   {subtotal > 500 && (
                     <div 
                       className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm"
-                      style={{ backgroundColor: '#F0E68C' }}
+                      style={{ backgroundColor: '#C9A84C' }}
                     >
                       <Sparkles className="w-4 h-4" />
                       <span>¡Envío gratis desbloqueado!</span>
@@ -167,7 +167,7 @@ export function CartPage({
                     <button
                       onClick={onCheckout}
                       className="w-full px-8 py-4 text-white rounded-lg hover:opacity-90 transition-all shadow-md flex items-center justify-center gap-2"
-                      style={{ backgroundColor: '#50C878' }}
+                      style={{ backgroundColor: '#7B4FA6' }}
                     >
                       <Sparkles className="w-5 h-5" />
                       Continuar con el proceso de pago
@@ -193,7 +193,7 @@ export function CartPage({
                       <button
                         onClick={onGuestCheckout}
                         className="w-full px-6 py-3 rounded-lg border-2 transition-all hover:bg-gray-50 flex items-center justify-center gap-2"
-                        style={{ borderColor: '#50C878', color: '#50C878' }}
+                        style={{ borderColor: '#7B4FA6', color: '#7B4FA6' }}
                       >
                         <UserPlus className="w-5 h-5" />
                         Continuar como invitado

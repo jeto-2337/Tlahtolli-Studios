@@ -65,19 +65,19 @@ export function InventoryAdjustmentPanel({ product, onSave, onCancel }: Inventor
           <div 
             className="p-4 rounded-lg border"
             style={{ 
-              backgroundColor: adjustment === 0 ? '#F3F4F6' : adjustment > 0 ? '#50C878' + '20' : '#FF4C4C' + '20',
-              borderColor: adjustment === 0 ? '#E5E7EB' : adjustment > 0 ? '#50C878' : '#FF4C4C'
+              backgroundColor: adjustment === 0 ? '#F3F4F6' : adjustment > 0 ? '#7B4FA6' + '20' : '#FF4C4C' + '20',
+              borderColor: adjustment === 0 ? '#E5E7EB' : adjustment > 0 ? '#7B4FA6' : '#FF4C4C'
             }}
           >
             <p className="text-sm text-gray-600 mb-1">Ajuste</p>
             <div className="flex items-center gap-2">
               {adjustment > 0 ? (
-                <TrendingUp className="w-6 h-6" style={{ color: '#50C878' }} />
+                <TrendingUp className="w-6 h-6" style={{ color: '#7B4FA6' }} />
               ) : adjustment < 0 ? (
                 <TrendingDown className="w-6 h-6" style={{ color: '#FF4C4C' }} />
               ) : null}
               <p className="text-2xl" style={{ 
-                color: adjustment === 0 ? '#6B7280' : adjustment > 0 ? '#50C878' : '#FF4C4C' 
+                color: adjustment === 0 ? '#6B7280' : adjustment > 0 ? '#7B4FA6' : '#FF4C4C' 
               }}>
                 {adjustment > 0 ? '+' : ''}{adjustment}
               </p>
@@ -87,7 +87,7 @@ export function InventoryAdjustmentPanel({ product, onSave, onCancel }: Inventor
 
           <div 
             className="p-4 rounded-lg border"
-            style={{ backgroundColor: '#F0E68C' + '20', borderColor: '#F0E68C' }}
+            style={{ backgroundColor: '#C9A84C' + '20', borderColor: '#C9A84C' }}
           >
             <p className="text-sm text-gray-600 mb-1">Stock Nuevo</p>
             <p className="text-2xl text-gray-900">{newStock}</p>
@@ -165,7 +165,7 @@ export function InventoryAdjustmentPanel({ product, onSave, onCancel }: Inventor
                   <div className="flex items-center justify-between mb-1">
                     <div className="flex items-center gap-2">
                       {adj.adjustment > 0 ? (
-                        <TrendingUp className="w-4 h-4" style={{ color: '#50C878' }} />
+                        <TrendingUp className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                       ) : (
                         <TrendingDown className="w-4 h-4" style={{ color: '#FF4C4C' }} />
                       )}
@@ -190,7 +190,7 @@ export function InventoryAdjustmentPanel({ product, onSave, onCancel }: Inventor
         {showSuccess && (
           <div 
             className="p-4 rounded-lg flex items-center gap-3"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <CheckCircle className="w-5 h-5 text-white" />
             <p className="text-white">
@@ -205,7 +205,7 @@ export function InventoryAdjustmentPanel({ product, onSave, onCancel }: Inventor
             type="submit"
             disabled={adjustment === 0}
             className="flex-1 px-6 py-3 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <Save className="w-5 h-5" />
             Confirmar Ajuste

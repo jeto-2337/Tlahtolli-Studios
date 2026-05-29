@@ -27,7 +27,7 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
   }
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="mb-8 flex items-center justify-between">
@@ -40,7 +40,7 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
             </button>
             <div>
               <h1 className="text-gray-900 flex items-center gap-2">
-                <Mail className="w-8 h-8" style={{ color: '#50C878' }} />
+                <Mail className="w-8 h-8" style={{ color: '#7B4FA6' }} />
                 Notificaciones por Correo
               </h1>
               <p className="text-sm text-gray-600 mt-1">
@@ -57,7 +57,7 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
             <div className="flex items-center justify-between mb-4">
               <Activity className="w-6 h-6 text-gray-400" />
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full animate-pulse" style={{ backgroundColor: '#50C878' }}></div>
+                <div className="w-3 h-3 rounded-full animate-pulse" style={{ backgroundColor: '#7B4FA6' }}></div>
                 <span className="text-xs text-gray-600">Activo</span>
               </div>
             </div>
@@ -80,18 +80,18 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div className="flex items-center justify-between mb-4">
               <Mail className="w-6 h-6 text-gray-400" />
-              <TrendingUp className="w-5 h-5" style={{ color: '#50C878' }} />
+              <TrendingUp className="w-5 h-5" style={{ color: '#7B4FA6' }} />
             </div>
             <h3 className="text-sm text-gray-600 mb-1">Enviados Hoy</h3>
             <p className="text-gray-900">247</p>
-            <p className="text-xs" style={{ color: '#50C878' }}>+12% vs ayer</p>
+            <p className="text-xs" style={{ color: '#7B4FA6' }}>+12% vs ayer</p>
           </div>
 
           {/* Failed Emails */}
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div className="flex items-center justify-between mb-4">
               <AlertCircle className="w-6 h-6 text-gray-400" />
-              <AlertTriangle className="w-5 h-5" style={{ color: '#F0E68C' }} />
+              <AlertTriangle className="w-5 h-5" style={{ color: '#C9A84C' }} />
             </div>
             <h3 className="text-sm text-gray-600 mb-1">Fallidos</h3>
             <p className="text-gray-900">3</p>
@@ -116,9 +116,9 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
               <div key={index} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
                 <div className="flex items-center gap-3">
                   {activity.status === 'success' ? (
-                    <CheckCircle className="w-5 h-5" style={{ color: '#50C878' }} />
+                    <CheckCircle className="w-5 h-5" style={{ color: '#7B4FA6' }} />
                   ) : (
-                    <Clock className="w-5 h-5" style={{ color: '#F0E68C' }} />
+                    <Clock className="w-5 h-5" style={{ color: '#C9A84C' }} />
                   )}
                   <div>
                     <p className="text-sm text-gray-900">{activity.type}</p>
@@ -128,7 +128,7 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
                 <div className="text-right">
                   <p className="text-xs text-gray-600">{activity.time}</p>
                   {activity.status === 'retrying' && (
-                    <p className="text-xs" style={{ color: '#F0E68C' }}>Reintentando...</p>
+                    <p className="text-xs" style={{ color: '#C9A84C' }}>Reintentando...</p>
                   )}
                 </div>
               </div>
@@ -143,7 +143,7 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
             className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow text-left"
           >
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#50C878' }}>
+              <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#7B4FA6' }}>
                 <Send className="w-5 h-5 text-white" />
               </div>
               <h3 className="text-gray-900">Probar Envío</h3>
@@ -173,7 +173,7 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
             className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow text-left"
           >
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#F0E68C' }}>
+              <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#C9A84C' }}>
                 <Mail className="w-5 h-5 text-white" />
               </div>
               <h3 className="text-gray-900">Editar Plantillas</h3>
@@ -187,7 +187,7 @@ export function EmailNotificationsDashboard({ onBack }: EmailNotificationsDashbo
         {/* Test Result Toast */}
         {testResult && (
           <div className="fixed bottom-4 right-4 bg-white rounded-lg shadow-lg p-4 flex items-center gap-3 animate-fade-in">
-            <CheckCircle className="w-5 h-5" style={{ color: '#50C878' }} />
+            <CheckCircle className="w-5 h-5" style={{ color: '#7B4FA6' }} />
             <p className="text-sm text-gray-900">{testResult}</p>
           </div>
         )}

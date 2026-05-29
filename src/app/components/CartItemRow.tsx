@@ -81,7 +81,7 @@ export function CartItemRow({ item, onUpdateQuantity, onRemove, onStockError }: 
           <div className="flex items-center gap-2">
             <div 
               className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm"
-              style={{ backgroundColor: '#F0E68C' }}
+              style={{ backgroundColor: '#C9A84C' }}
             >
               <span>{item.status}</span>
             </div>

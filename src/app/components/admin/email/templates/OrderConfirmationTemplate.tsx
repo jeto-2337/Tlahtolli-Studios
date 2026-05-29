@@ -6,8 +6,8 @@ export function OrderConfirmationTemplate() {
     <div className="bg-gray-50 p-8 font-sans">
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-sm overflow-hidden">
         {/* Header */}
-        <div className="p-8 text-center" style={{ backgroundColor: '#FFFDD0' }}>
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: '#50C878' }}>
+        <div className="p-8 text-center" style={{ backgroundColor: '#F4F0F8' }}>
+          <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: '#7B4FA6' }}>
             <Package className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-2xl text-gray-900 mb-2">¡Gracias por tu compra!</h1>
@@ -80,7 +80,7 @@ export function OrderConfirmationTemplate() {
           <a
             href="#"
             className="inline-block px-6 py-3 rounded-lg text-white no-underline transition-all hover:shadow-md"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             Ver mi Pedido
           </a>

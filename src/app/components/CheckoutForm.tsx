@@ -380,7 +380,7 @@ export function CheckoutForm({ onComplete, isGuest }: CheckoutFormProps) {
           <button
             type="submit"
             className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <Sparkles className="w-5 h-5" />
             Continuar a método de envío

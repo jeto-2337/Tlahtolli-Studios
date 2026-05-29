@@ -57,7 +57,7 @@ export function ErrorNotificationTemplate() {
           </h3>
           <div className="space-y-3">
             <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ backgroundColor: '#F0E68C' }}>
+              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ backgroundColor: '#C9A84C' }}>
                 <span className="text-xs text-gray-700">1</span>
               </div>
               <div className="flex-1">
@@ -67,7 +67,7 @@ export function ErrorNotificationTemplate() {
             </div>
 
             <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ backgroundColor: '#F0E68C' }}>
+              <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ backgroundColor: '#C9A84C' }}>
                 <span className="text-xs text-gray-700">2</span>
               </div>
               <div className="flex-1">

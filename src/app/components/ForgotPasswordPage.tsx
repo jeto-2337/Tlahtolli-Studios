@@ -80,7 +80,7 @@ export function ForgotPasswordPage({ onBackToLogin, onSuccess, onResetPassword }
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#FFFDD0' }}>
+      <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#F4F0F8' }}>
         <div className="max-w-md w-full space-y-8">
           <button
             onClick={onBackToLogin}
@@ -93,7 +93,7 @@ export function ForgotPasswordPage({ onBackToLogin, onSuccess, onResetPassword }
           <div className="text-center">
             <div 
               className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 relative"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <KeyRound className="w-8 h-8 text-white" />
               <div 
@@ -126,7 +126,7 @@ export function ForgotPasswordPage({ onBackToLogin, onSuccess, onResetPassword }
                     <p className="text-xs text-gray-600">
                       {successMessage}
                     </p>
-                    <div className="mt-3 p-2 rounded" style={{ backgroundColor: '#F0E68C' }}>
+                    <div className="mt-3 p-2 rounded" style={{ backgroundColor: '#C9A84C' }}>
                       <div className="flex items-center gap-2 text-xs text-gray-700">
                         <Clock className="w-4 h-4" />
                         <span>El enlace expirará en 5 minutos</span>
@@ -177,7 +177,7 @@ export function ForgotPasswordPage({ onBackToLogin, onSuccess, onResetPassword }
                     type="submit"
                     disabled={isLoading}
                     className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                    style={{ backgroundColor: '#50C878' }}
+                    style={{ backgroundColor: '#7B4FA6' }}
                   >
                     {isLoading ? (
                       <>
@@ -210,7 +210,7 @@ export function ForgotPasswordPage({ onBackToLogin, onSuccess, onResetPassword }
                 <button
                   onClick={onBackToLogin}
                   className="w-full px-6 py-3 rounded-lg text-white transition-all hover:shadow-md"
-                  style={{ backgroundColor: '#50C878' }}
+                  style={{ backgroundColor: '#7B4FA6' }}
                 >
                   Volver al inicio de sesión
                 </button>

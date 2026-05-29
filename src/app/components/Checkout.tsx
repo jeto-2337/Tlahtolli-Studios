@@ -216,7 +216,7 @@ export function Checkout({ isGuest, items, onComplete }: CheckoutProps) {
   };
 
   return (
-    <div className="min-h-screen py-8" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen py-8" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-2">
           <h1 className="text-gray-900">Finalizar compra</h1>

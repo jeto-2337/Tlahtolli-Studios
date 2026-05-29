@@ -47,9 +47,9 @@ export function PaymentMethodSelector({
       case 'fast':
         return '#73C2FB';
       case 'secure':
-        return '#50C878';
+        return '#7B4FA6';
       case 'recommended':
-        return '#F0E68C';
+        return '#C9A84C';
       case 'manual':
         return '#FF9F40';
       default:
@@ -125,7 +125,7 @@ export function PaymentMethodSelector({
       {/* Métodos disponibles */}
       <div className="mb-8">
         <h3 className="text-gray-900 mb-4 flex items-center gap-2">
-          <Sparkles className="w-5 h-5" style={{ color: '#50C878' }} />
+          <Sparkles className="w-5 h-5" style={{ color: '#7B4FA6' }} />
           Métodos Disponibles
         </h3>
         <div className="grid md:grid-cols-2 gap-4">
@@ -148,7 +148,7 @@ export function PaymentMethodSelector({
                   </div>
                 </div>
                 {selectedMethod?.id === method.id && (
-                  <CheckCircle className="w-6 h-6" style={{ color: '#50C878' }} />
+                  <CheckCircle className="w-6 h-6" style={{ color: '#7B4FA6' }} />
                 )}
               </div>
 
@@ -220,11 +220,11 @@ export function PaymentMethodSelector({
         <div className="sticky bottom-0 bg-white border-t border-gray-200 pt-6 pb-6">
           <div 
             className="p-4 rounded-lg mb-4 flex items-center gap-3"
-            style={{ backgroundColor: '#50C878' + '20', borderColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' + '20', borderColor: '#7B4FA6' }}
           >
-            <CheckCircle className="w-5 h-5" style={{ color: '#50C878' }} />
+            <CheckCircle className="w-5 h-5" style={{ color: '#7B4FA6' }} />
             <div className="text-sm">
-              <p style={{ color: '#50C878' }}>
+              <p style={{ color: '#7B4FA6' }}>
                 <strong>Método seleccionado:</strong> {selectedMethod.name}
               </p>
               <p className="text-xs text-gray-600">
@@ -236,7 +236,7 @@ export function PaymentMethodSelector({
           <button
             onClick={onContinue}
             className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <CreditCard className="w-5 h-5" />
             Continuar al Portal de Pago
@@ -248,7 +248,7 @@ export function PaymentMethodSelector({
       <div className="mt-8 grid md:grid-cols-3 gap-4">
         <div className="bg-white rounded-lg p-4 border border-gray-200">
           <div className="flex items-center gap-2 mb-2">
-            <Shield className="w-4 h-4" style={{ color: '#50C878' }} />
+            <Shield className="w-4 h-4" style={{ color: '#7B4FA6' }} />
             <p className="text-sm">Pago Seguro</p>
           </div>
           <p className="text-xs text-gray-600">
@@ -266,7 +266,7 @@ export function PaymentMethodSelector({
         </div>
         <div className="bg-white rounded-lg p-4 border border-gray-200">
           <div className="flex items-center gap-2 mb-2">
-            <Sparkles className="w-4 h-4" style={{ color: '#F0E68C' }} />
+            <Sparkles className="w-4 h-4" style={{ color: '#C9A84C' }} />
             <p className="text-sm">Cofre Protegido</p>
           </div>
           <p className="text-xs text-gray-600">

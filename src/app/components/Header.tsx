@@ -1,5 +1,5 @@
-import React from 'react';
-import { ShoppingCart, Menu, User, LogOut, Shield, Truck } from 'lucide-react';
+import React, { useState } from 'react';
+import { ShoppingCart, Menu, User, LogOut, Shield, Truck, X } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import logo from 'figma:asset/be661e8251bd4a685dcda726669280963e85c443.png';
 
@@ -16,98 +16,112 @@ interface HeaderProps {
   isAdmin?: boolean;
 }
 
-export function Header({ cartItemsCount, onCartClick, onLogoClick, isAuthenticated, userName, onLoginClick, onLogoutClick, onAdminClick, onTrackOrderClick, isAdmin }: HeaderProps) {
+export function Header({
+  cartItemsCount, onCartClick, onLogoClick,
+  isAuthenticated, userName, onLoginClick,
+  onLogoutClick, onAdminClick, onTrackOrderClick, isAdmin,
+}: HeaderProps) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const iconBtn = (onClick: () => void, title: string, child: React.ReactNode) => (
+    <button onClick={onClick} title={title}
+      style={{ background:'none', border:'none', cursor:'pointer', padding:'7px', borderRadius:'8px', display:'flex', alignItems:'center', justifyContent:'center' }}
+      onMouseEnter={e => { e.currentTarget.style.background = 'rgba(123,79,166,0.2)'; }}
+      onMouseLeave={e => { e.currentTarget.style.background = 'none'; }}
+    >{child}</button>
+  );
+
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <button 
-            onClick={onLogoClick}
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
-          >
-            <ImageWithFallback 
-              src={logo}
-              alt="Tlahtolli Studio Logo"
-              className="w-12 h-12 object-contain"
-            />
-            <span className="text-gray-900">Tlahtolli Studio</span>
-          </button>
-          
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Productos</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Colecciones</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Sobre nosotros</a>
-          </nav>
-          
-          <div className="flex items-center gap-4">
-            {isAuthenticated && userName ? (
-              <div className="hidden md:flex items-center gap-3">
-                <div className="flex items-center gap-2 px-3 py-1 rounded-full" style={{ backgroundColor: '#F0E68C' }}>
-                  <User className="w-4 h-4 text-gray-700" />
-                  <span className="text-sm text-gray-700">{userName}</span>
-                </div>
-                {onLogoutClick && (
-                  <button
-                    onClick={onLogoutClick}
-                    className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-                    title="Cerrar sesión"
-                  >
-                    <LogOut className="w-5 h-5 text-gray-700" />
-                  </button>
-                )}
-                {isAdmin && onAdminClick && (
-                  <button
-                    onClick={onAdminClick}
-                    className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-                    title="Panel de administración"
-                  >
-                    <Shield className="w-5 h-5 text-gray-700" />
-                  </button>
-                )}
-                {onTrackOrderClick && (
-                  <button
-                    onClick={onTrackOrderClick}
-                    className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-                    title="Rastrear pedido"
-                  >
-                    <Truck className="w-5 h-5 text-gray-700" />
-                  </button>
-                )}
-              </div>
-            ) : (
-              onLoginClick && (
-                <button
-                  onClick={onLoginClick}
-                  className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all hover:shadow-md"
-                  style={{ backgroundColor: '#50C878' }}
-                >
-                  <User className="w-4 h-4" />
-                  <span>Ingresar</span>
-                </button>
-              )
-            )}
-            
-            <button 
-              onClick={onCartClick}
-              className="relative p-2 hover:bg-gray-100 rounded-full transition-colors"
-              aria-label="Carrito de compras"
+    <React.Fragment>
+      <div style={{ height:'3px', background:'linear-gradient(90deg,#7B4FA6 0%,#C9A84C 40%,#7B4FA6 70%,#3BAF7A 100%)' }} />
+
+      <header style={{ background:'#1A1225', borderBottom:'1px solid rgba(201,168,76,0.25)', position:'sticky', top:0, zIndex:50, boxShadow:'0 2px 20px rgba(26,18,37,0.6)' }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto', padding:'0 1.5rem' }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', height:'68px' }}>
+
+            <button onClick={onLogoClick}
+              style={{ display:'flex', alignItems:'center', gap:'10px', background:'none', border:'none', cursor:'pointer', padding:'4px', borderRadius:'8px' }}
+              onMouseEnter={e => { e.currentTarget.style.opacity = '0.8'; }}
+              onMouseLeave={e => { e.currentTarget.style.opacity = '1'; }}
             >
-              <ShoppingCart className="w-6 h-6 text-gray-700" />
-              {cartItemsCount > 0 && (
-                <span 
-                  className="absolute -top-1 -right-1 w-5 h-5 rounded-full text-white text-xs flex items-center justify-center"
-                  style={{ backgroundColor: '#50C878' }}
+              <ImageWithFallback src={logo} alt="Tlahtolli Studio Logo" className="w-11 h-11 object-contain" />
+              <div style={{ textAlign:'left' }}>
+                <span style={{ display:'block', fontFamily:'Cinzel,serif', fontWeight:700, fontSize:'1.1rem', color:'#C9A84C', letterSpacing:'0.05em', lineHeight:1.1 }}>Tlahtolli</span>
+                <span style={{ display:'block', fontFamily:'Cinzel,serif', fontWeight:400, fontSize:'0.65rem', color:'#A97CC7', letterSpacing:'0.15em', textTransform:'uppercase' }}>Studio</span>
+              </div>
+            </button>
+
+            <nav className="hidden md:flex" style={{ alignItems:'center', gap:'2rem' }}>
+              {['Productos','Colecciones','Sobre nosotros'].map(label => (
+                <span key={label}
+                  onClick={() => {}}
+                  style={{ fontFamily:'Nunito,sans-serif', fontWeight:600, fontSize:'0.9rem', color:'#D4B8E8', cursor:'pointer', letterSpacing:'0.03em', padding:'4px 0', borderBottom:'2px solid transparent', transition:'color 0.2s,border-color 0.2s' }}
+                  onMouseEnter={e => { e.currentTarget.style.color='#C9A84C'; e.currentTarget.style.borderBottomColor='#C9A84C'; }}
+                  onMouseLeave={e => { e.currentTarget.style.color='#D4B8E8'; e.currentTarget.style.borderBottomColor='transparent'; }}
+                >{label}</span>
+              ))}
+            </nav>
+
+            <div style={{ display:'flex', alignItems:'center', gap:'8px' }}>
+              {isAuthenticated && userName ? (
+                <div className="hidden md:flex" style={{ alignItems:'center', gap:'6px' }}>
+                  <div style={{ display:'flex', alignItems:'center', gap:'8px', padding:'5px 12px', background:'rgba(123,79,166,0.2)', border:'1px solid rgba(123,79,166,0.4)', borderRadius:'999px' }}>
+                    <User size={14} color="#A97CC7" />
+                    <span style={{ fontSize:'0.85rem', color:'#D4B8E8', fontWeight:600 }}>{userName}</span>
+                  </div>
+                  {isAdmin && onAdminClick && iconBtn(onAdminClick, 'Panel admin', <Shield size={18} color="#C9A84C" />)}
+                  {onTrackOrderClick && iconBtn(onTrackOrderClick, 'Rastrear pedido', <Truck size={18} color="#A97CC7" />)}
+                  {onLogoutClick && iconBtn(onLogoutClick, 'Cerrar sesion', <LogOut size={18} color="#A97CC7" />)}
+                </div>
+              ) : onLoginClick ? (
+                <button onClick={onLoginClick} className="hidden md:flex"
+                  style={{ alignItems:'center', gap:'6px', padding:'7px 18px', background:'linear-gradient(135deg,#7B4FA6,#5C3280)', border:'1px solid rgba(201,168,76,0.3)', borderRadius:'8px', color:'#FBF6EE', fontFamily:'Nunito,sans-serif', fontWeight:700, fontSize:'0.875rem', cursor:'pointer' }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(201,168,76,0.7)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(201,168,76,0.3)'; }}
                 >
-                  {cartItemsCount}
-                </span>
-              )}
-            </button>
-            <button className="md:hidden p-2 hover:bg-gray-100 rounded-full transition-colors">
-              <Menu className="w-6 h-6 text-gray-700" />
-            </button>
+                  <User size={15} />
+                  Ingresar
+                </button>
+              ) : null}
+
+              <button onClick={onCartClick} aria-label="Carrito"
+                style={{ position:'relative', background:'none', border:'none', cursor:'pointer', padding:'8px', borderRadius:'8px' }}
+                onMouseEnter={e => { e.currentTarget.style.background='rgba(201,168,76,0.12)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background='none'; }}
+              >
+                <ShoppingCart size={22} color="#C9A84C" />
+                {cartItemsCount > 0 && (
+                  <span style={{ position:'absolute', top:'2px', right:'2px', width:'18px', height:'18px', background:'#7B4FA6', border:'2px solid #1A1225', borderRadius:'50%', color:'#FBF6EE', fontSize:'0.65rem', fontWeight:700, display:'flex', alignItems:'center', justifyContent:'center' }}>
+                    {cartItemsCount}
+                  </span>
+                )}
+              </button>
+
+              <button className="md:hidden"
+                onClick={() => setMenuOpen(!menuOpen)}
+                style={{ background:'none', border:'none', cursor:'pointer', padding:'8px', borderRadius:'8px' }}
+              >
+                {menuOpen ? <X size={22} color="#C9A84C" /> : <Menu size={22} color="#C9A84C" />}
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+
+        {menuOpen && (
+          <div style={{ background:'#231830', borderTop:'1px solid rgba(201,168,76,0.2)', padding:'1rem 1.5rem 1.5rem' }}>
+            {['Productos','Colecciones','Sobre nosotros'].map(label => (
+              <span key={label} onClick={() => setMenuOpen(false)}
+                style={{ display:'block', padding:'10px 0', borderBottom:'1px solid rgba(123,79,166,0.2)', color:'#D4B8E8', fontWeight:600, fontSize:'0.95rem', cursor:'pointer' }}
+              >{label}</span>
+            ))}
+            {!isAuthenticated && onLoginClick && (
+              <button onClick={() => { onLoginClick(); setMenuOpen(false); }}
+                style={{ marginTop:'1rem', width:'100%', padding:'10px', background:'linear-gradient(135deg,#7B4FA6,#5C3280)', border:'none', borderRadius:'8px', color:'#FBF6EE', fontWeight:700, fontSize:'0.95rem', cursor:'pointer' }}
+              >Ingresar</button>
+            )}
+          </div>
+        )}
+      </header>
+    </React.Fragment>
   );
 }

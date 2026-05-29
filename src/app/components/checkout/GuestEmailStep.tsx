@@ -73,14 +73,14 @@ export function GuestEmailStep({ onComplete, initialEmail = '' }: GuestEmailStep
           <button
             type="submit"
             className="w-full px-6 py-3 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <Sparkles className="w-5 h-5" />
             Continuar
           </button>
         </form>
 
-        <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: '#FFFDD0' }}>
+        <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: '#F4F0F8' }}>
           <p className="text-xs text-gray-600 text-center">
             💡 Tip: Podrás ver el estado de tu orden sin necesidad de crear una cuenta
           </p>

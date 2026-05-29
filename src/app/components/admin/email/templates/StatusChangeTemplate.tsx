@@ -24,7 +24,7 @@ export function StatusChangeTemplate() {
           {/* Status Timeline */}
           <div className="space-y-4">
             <div className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#50C878' }}>
+              <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#7B4FA6' }}>
                 <CheckCircle className="w-5 h-5 text-white" />
               </div>
               <div className="flex-1">
@@ -34,7 +34,7 @@ export function StatusChangeTemplate() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#50C878' }}>
+              <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#7B4FA6' }}>
                 <Package className="w-5 h-5 text-white" />
               </div>
               <div className="flex-1">

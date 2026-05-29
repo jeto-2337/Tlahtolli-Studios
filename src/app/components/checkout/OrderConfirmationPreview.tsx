@@ -40,7 +40,7 @@ export function OrderConfirmationPreview({
         <div className="text-center mb-8">
           <div 
             className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <CheckCircle className="w-8 h-8 text-white" />
           </div>
@@ -64,7 +64,7 @@ export function OrderConfirmationPreview({
         {/* Resumen de productos */}
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-4">
-            <ShoppingBag className="w-5 h-5" style={{ color: '#50C878' }} />
+            <ShoppingBag className="w-5 h-5" style={{ color: '#7B4FA6' }} />
             <h3 className="text-gray-900">Productos ({items.length})</h3>
           </div>
           <div className="bg-gray-50 rounded-lg p-4 space-y-3">
@@ -95,7 +95,7 @@ export function OrderConfirmationPreview({
         {/* Dirección de envío */}
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-4">
-            <MapPin className="w-5 h-5" style={{ color: '#50C878' }} />
+            <MapPin className="w-5 h-5" style={{ color: '#7B4FA6' }} />
             <h3 className="text-gray-900">Dirección de Envío</h3>
           </div>
           <div className="bg-gray-50 rounded-lg p-4">
@@ -121,7 +121,7 @@ export function OrderConfirmationPreview({
         {orderData.shippingMethod && (
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-4">
-              <Package className="w-5 h-5" style={{ color: '#50C878' }} />
+              <Package className="w-5 h-5" style={{ color: '#7B4FA6' }} />
               <h3 className="text-gray-900">Método de Envío</h3>
             </div>
             <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-between">
@@ -129,7 +129,7 @@ export function OrderConfirmationPreview({
                 <p className="text-sm text-gray-900">{orderData.shippingMethod.method}</p>
                 <p className="text-xs text-gray-500">Entrega estimada: 3-5 días hábiles</p>
               </div>
-              <p className="text-sm" style={{ color: '#50C878' }}>
+              <p className="text-sm" style={{ color: '#7B4FA6' }}>
                 ${orderData.shippingMethod.price.toFixed(2)}
               </p>
             </div>
@@ -139,7 +139,7 @@ export function OrderConfirmationPreview({
         {/* Método de pago */}
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-4">
-            <CreditCard className="w-5 h-5" style={{ color: '#50C878' }} />
+            <CreditCard className="w-5 h-5" style={{ color: '#7B4FA6' }} />
             <h3 className="text-gray-900">Método de Pago</h3>
           </div>
           <div className="bg-gray-50 rounded-lg p-4">
@@ -167,7 +167,7 @@ export function OrderConfirmationPreview({
         {/* Resumen de totales */}
         <div className="mb-8">
           <div className="flex items-center gap-2 mb-4">
-            <DollarSign className="w-5 h-5" style={{ color: '#50C878' }} />
+            <DollarSign className="w-5 h-5" style={{ color: '#7B4FA6' }} />
             <h3 className="text-gray-900">Resumen de Pago</h3>
           </div>
           <div 
@@ -200,7 +200,7 @@ export function OrderConfirmationPreview({
           <button
             onClick={onConfirm}
             className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <Sparkles className="w-5 h-5" />
             Procesar Pago de ${total.toFixed(2)}
@@ -215,7 +215,7 @@ export function OrderConfirmationPreview({
         </div>
 
         {/* Información de seguridad */}
-        <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: '#F0E68C' }}>
+        <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: '#C9A84C' }}>
           <p className="text-xs text-gray-700 text-center">
             🔒 Tu información está protegida con encriptación de nivel bancario. 
             El pago será procesado de forma segura.

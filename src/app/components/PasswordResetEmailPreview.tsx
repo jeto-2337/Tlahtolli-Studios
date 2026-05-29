@@ -56,11 +56,11 @@ export function PasswordResetEmailPreview({
             <div 
               className="p-6 text-center"
               style={{ 
-                background: 'linear-gradient(135deg, #50C878 0%, #73C2FB 100%)'
+                background: 'linear-gradient(135deg, #7B4FA6 0%, #73C2FB 100%)'
               }}
             >
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white mb-4 shadow-lg">
-                <KeyRound className="w-8 h-8" style={{ color: '#50C878' }} />
+                <KeyRound className="w-8 h-8" style={{ color: '#7B4FA6' }} />
               </div>
               <h1 className="text-white text-2xl mb-2">
                 Recuperación de Contraseña
@@ -105,7 +105,7 @@ export function PasswordResetEmailPreview({
                 <a
                   href={resetLink}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all hover:shadow-md"
-                  style={{ backgroundColor: '#50C878' }}
+                  style={{ backgroundColor: '#7B4FA6' }}
                 >
                   <KeyRound className="w-5 h-5" />
                   Restablecer mi contraseña
@@ -128,7 +128,7 @@ export function PasswordResetEmailPreview({
                 className="p-4 rounded-lg border"
                 style={{ 
                   backgroundColor: '#FFF9E6',
-                  borderColor: '#F0E68C'
+                  borderColor: '#C9A84C'
                 }}
               >
                 <div className="flex items-start gap-3">
@@ -160,7 +160,7 @@ export function PasswordResetEmailPreview({
             {/* Email Footer */}
             <div 
               className="p-6 text-center border-t"
-              style={{ backgroundColor: '#FFFDD0' }}
+              style={{ backgroundColor: '#F4F0F8' }}
             >
               <p className="text-xs text-gray-600 mb-2">
                 <strong>Tlahtolli Studio</strong> - Mercancía de Videojuegos
@@ -196,7 +196,7 @@ export function PasswordResetEmailPreview({
               </div>
               <div>
                 <span className="text-gray-600">Estado:</span>
-                <p className="font-mono" style={{ color: '#50C878' }}>Pendiente de envío</p>
+                <p className="font-mono" style={{ color: '#7B4FA6' }}>Pendiente de envío</p>
               </div>
             </div>
           </div>

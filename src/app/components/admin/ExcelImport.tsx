@@ -135,7 +135,7 @@ export function ExcelImport({ onImport, onCancel }: ExcelImportProps) {
         <button
           onClick={handleDownloadTemplate}
           className="px-4 py-2 rounded-lg border-2 transition-all hover:shadow-sm flex items-center gap-2"
-          style={{ borderColor: '#50C878', color: '#50C878' }}
+          style={{ borderColor: '#7B4FA6', color: '#7B4FA6' }}
         >
           <Download className="w-4 h-4" />
           Descargar Plantilla de Ejemplo
@@ -185,11 +185,11 @@ export function ExcelImport({ onImport, onCancel }: ExcelImportProps) {
           {validProducts.length > 0 && (
             <div 
               className="p-4 rounded-lg border"
-              style={{ backgroundColor: '#50C878' + '20', borderColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' + '20', borderColor: '#7B4FA6' }}
             >
               <div className="flex items-center gap-3 mb-3">
-                <CheckCircle className="w-5 h-5" style={{ color: '#50C878' }} />
-                <p className="text-sm" style={{ color: '#50C878' }}>
+                <CheckCircle className="w-5 h-5" style={{ color: '#7B4FA6' }} />
+                <p className="text-sm" style={{ color: '#7B4FA6' }}>
                   <strong>{validProducts.length} productos válidos listos para importar</strong>
                 </p>
               </div>
@@ -245,7 +245,7 @@ export function ExcelImport({ onImport, onCancel }: ExcelImportProps) {
           {showSuccess && (
             <div 
               className="p-4 rounded-lg flex items-center gap-3"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <CheckCircle className="w-5 h-5 text-white" />
               <p className="text-white">
@@ -260,7 +260,7 @@ export function ExcelImport({ onImport, onCancel }: ExcelImportProps) {
               onClick={handleImport}
               disabled={validProducts.length === 0 || showSuccess}
               className="flex-1 px-6 py-3 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <Upload className="w-5 h-5" />
               Importar {validProducts.length} Producto{validProducts.length !== 1 ? 's' : ''}

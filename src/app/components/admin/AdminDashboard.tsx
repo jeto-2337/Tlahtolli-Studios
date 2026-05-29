@@ -429,7 +429,7 @@ export function AdminDashboard({ onBack, adminName = 'Administrador' }: AdminDas
     return (
       <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#F5F7FA' }}>
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto mb-4" style={{ borderColor: '#50C878' }}></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto mb-4" style={{ borderColor: '#7B4FA6' }}></div>
           <p className="text-gray-600">Cargando productos desde la base de datos...</p>
         </div>
       </div>
@@ -446,7 +446,7 @@ export function AdminDashboard({ onBack, adminName = 'Administrador' }: AdminDas
           <button
             onClick={loadProducts}
             className="px-6 py-3 rounded-lg text-white transition-all"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             Reintentar
           </button>
@@ -568,7 +568,7 @@ export function AdminDashboard({ onBack, adminName = 'Administrador' }: AdminDas
                 <button
                   onClick={() => setCurrentView('subscriptions')}
                   className="px-6 py-3 rounded-lg bg-white border-2 transition-all hover:shadow-sm flex items-center gap-2"
-                  style={{ borderColor: '#F0E68C', color: '#D97706' }}
+                  style={{ borderColor: '#C9A84C', color: '#D97706' }}
                 >
                   <Bell className="w-5 h-5" />
                   Suscripciones de Restock

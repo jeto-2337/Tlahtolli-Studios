@@ -44,14 +44,14 @@ export function DatabaseStatusIndicator({ onStatusChange }: DatabaseStatusProps)
   const getStatusColor = () => {
     switch (status) {
       case 'connected':
-        return '#50C878'; // Verde esmeralda
+        return '#7B4FA6'; // Verde esmeralda
       case 'disconnected':
       case 'error':
         return '#FF4C4C'; // Rojo
       case 'checking':
         return '#73C2FB'; // Azul maya
       default:
-        return '#F0E68C'; // Caqui
+        return '#C9A84C'; // Caqui
     }
   };
 
@@ -89,7 +89,7 @@ export function DatabaseStatusIndicator({ onStatusChange }: DatabaseStatusProps)
       <div
         className="flex items-center gap-2 px-3 py-2 rounded-lg shadow-lg cursor-pointer transition-all duration-200 hover:shadow-xl"
         style={{ 
-          backgroundColor: '#FFFDD0',
+          backgroundColor: '#F4F0F8',
           border: `2px solid ${getStatusColor()}`
         }}
         onClick={() => setIsExpanded(!isExpanded)}
@@ -105,7 +105,7 @@ export function DatabaseStatusIndicator({ onStatusChange }: DatabaseStatusProps)
       {isExpanded && (
         <div
           className="absolute bottom-16 right-0 p-4 rounded-lg shadow-xl max-w-sm"
-          style={{ backgroundColor: '#FFFDD0', border: '2px solid #F0E68C' }}
+          style={{ backgroundColor: '#F4F0F8', border: '2px solid #C9A84C' }}
         >
           <div className="flex items-start justify-between mb-3">
             <h3 className="font-semibold text-gray-900">Estado de Base de Datos</h3>
@@ -129,7 +129,7 @@ export function DatabaseStatusIndicator({ onStatusChange }: DatabaseStatusProps)
             </div>
 
             {status === 'connected' && (
-              <div className="p-3 rounded-md" style={{ backgroundColor: '#50C87820' }}>
+              <div className="p-3 rounded-md" style={{ backgroundColor: '#7B4FA620' }}>
                 <p className="text-gray-700 font-medium mb-1">✅ API Activa</p>
                 <p className="text-gray-600 text-xs">
                   Los productos se cargan desde la base de datos de Supabase.
@@ -167,12 +167,12 @@ export function DatabaseStatusIndicator({ onStatusChange }: DatabaseStatusProps)
                 checkConnection();
               }}
               className="w-full py-2 px-3 rounded-md transition-colors text-white text-xs font-medium"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = '#45B069';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#50C878';
+                e.currentTarget.style.backgroundColor = '#7B4FA6';
               }}
             >
               🔄 Verificar Conexión

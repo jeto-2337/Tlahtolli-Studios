@@ -32,7 +32,7 @@ export function SuggestionCard({ product, reason, onAddToCart, onNotifyMe }: Sug
         {/* Motivo de recomendación */}
         <div
           className="absolute top-3 left-3 px-3 py-1.5 rounded-full text-xs flex items-center gap-1.5 shadow-sm"
-          style={{ backgroundColor: '#F0E68C', color: '#666' }}
+          style={{ backgroundColor: '#C9A84C', color: '#666' }}
         >
           <span>{getReasonIcon(reason)}</span>
           <span className="font-medium">{getReasonText(reason)}</span>
@@ -55,7 +55,7 @@ export function SuggestionCard({ product, reason, onAddToCart, onNotifyMe }: Sug
         <div className="flex items-center justify-between mb-3">
           <p className="text-xl text-gray-900">${product.price} MXN</p>
           {isAvailable ? (
-            <span className="text-xs px-2 py-1 rounded" style={{ backgroundColor: '#50C878' + '20', color: '#50C878' }}>
+            <span className="text-xs px-2 py-1 rounded" style={{ backgroundColor: '#7B4FA6' + '20', color: '#7B4FA6' }}>
               Disponible
             </span>
           ) : (
@@ -77,7 +77,7 @@ export function SuggestionCard({ product, reason, onAddToCart, onNotifyMe }: Sug
           <button
             onClick={() => onAddToCart(product)}
             className="w-full px-4 py-3 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <ShoppingCart className="w-4 h-4" />
             <span>Añadir al carrito</span>

@@ -80,10 +80,10 @@ export default function CreateAdminForm({ onBack }: CreateAdminFormProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F0E68C] via-[#FFFDD0] to-[#73C2FB] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-[#C9A84C] via-[#F4F0F8] to-[#73C2FB] flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
         <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold text-[#50C878] mb-2">🔑 Crear Admin</h1>
+          <h1 className="text-3xl font-bold text-[#7B4FA6] mb-2">🔑 Crear Admin</h1>
           <p className="text-gray-600">Crear nuevo usuario administrador</p>
         </div>
 
@@ -98,7 +98,7 @@ export default function CreateAdminForm({ onBack }: CreateAdminFormProps) {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#50C878] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7B4FA6] focus:border-transparent"
               placeholder="Juan"
             />
           </div>
@@ -113,7 +113,7 @@ export default function CreateAdminForm({ onBack }: CreateAdminFormProps) {
               value={formData.paternalLastName}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#50C878] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7B4FA6] focus:border-transparent"
               placeholder="García"
             />
           </div>
@@ -128,7 +128,7 @@ export default function CreateAdminForm({ onBack }: CreateAdminFormProps) {
               value={formData.maternalLastName}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#50C878] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7B4FA6] focus:border-transparent"
               placeholder="López"
             />
           </div>
@@ -143,7 +143,7 @@ export default function CreateAdminForm({ onBack }: CreateAdminFormProps) {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#50C878] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7B4FA6] focus:border-transparent"
               placeholder="admin@tlahtolli.com"
             />
           </div>
@@ -158,7 +158,7 @@ export default function CreateAdminForm({ onBack }: CreateAdminFormProps) {
               value={formData.password}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#50C878] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7B4FA6] focus:border-transparent"
               placeholder="admin123"
             />
             <p className="text-xs text-gray-500 mt-1">
@@ -169,7 +169,7 @@ export default function CreateAdminForm({ onBack }: CreateAdminFormProps) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#50C878] text-white py-3 rounded-lg font-semibold hover:bg-[#45b368] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-[#7B4FA6] text-white py-3 rounded-lg font-semibold hover:bg-[#5C3280] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? 'Creando...' : '✨ Crear Administrador'}
           </button>
@@ -202,7 +202,7 @@ export default function CreateAdminForm({ onBack }: CreateAdminFormProps) {
         <div className="mt-6 text-center">
           <a 
             href="/login" 
-            className="text-[#50C878] hover:underline text-sm"
+            className="text-[#7B4FA6] hover:underline text-sm"
           >
             ← Volver al Login
           </a>

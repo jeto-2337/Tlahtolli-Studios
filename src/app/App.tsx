@@ -414,9 +414,9 @@ function AppContent() {
       {currentView === 'products' && (
         <>
           {isLoadingProducts ? (
-            <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#FFFDD0' }}>
+            <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#F4F0F8' }}>
               <div className="text-center">
-                <div className="animate-spin rounded-full h-16 w-16 border-b-2 mx-auto mb-4" style={{ borderColor: '#50C878' }}></div>
+                <div className="animate-spin rounded-full h-16 w-16 border-b-2 mx-auto mb-4" style={{ borderColor: '#7B4FA6' }}></div>
                 <h2 className="text-gray-900 mb-2">Cargando tesoros...</h2>
                 <p className="text-gray-600">✦ Preparando el catálogo de aventuras ✦</p>
               </div>

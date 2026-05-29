@@ -3,7 +3,7 @@ import { UserPlus, LogIn, RefreshCw, Shield, CheckCircle } from 'lucide-react';
 
 export function AuthDemo() {
   return (
-    <div className="min-h-screen py-12 px-4" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen py-12 px-4" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-gray-900 mb-4">Sistema de Autenticación - TONALLI-004</h1>
@@ -16,7 +16,7 @@ export function AuthDemo() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div 
               className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <UserPlus className="w-6 h-6 text-white" />
             </div>
@@ -26,15 +26,15 @@ export function AuthDemo() {
             </p>
             <ul className="space-y-2 text-xs text-gray-600">
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Validación de email</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Contraseña segura</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Opción "Recuérdame"</span>
               </li>
             </ul>
@@ -43,7 +43,7 @@ export function AuthDemo() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div 
               className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <LogIn className="w-6 h-6 text-white" />
             </div>
@@ -53,15 +53,15 @@ export function AuthDemo() {
             </p>
             <ul className="space-y-2 text-xs text-gray-600">
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Validación de credenciales</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Sesión persistente</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Mensajes dinámicos</span>
               </li>
             </ul>
@@ -70,7 +70,7 @@ export function AuthDemo() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div 
               className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <RefreshCw className="w-6 h-6 text-white" />
             </div>
@@ -80,15 +80,15 @@ export function AuthDemo() {
             </p>
             <ul className="space-y-2 text-xs text-gray-600">
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Recuperación rápida</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Datos preservados</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Acceso inmediato</span>
               </li>
             </ul>
@@ -127,11 +127,11 @@ export function AuthDemo() {
             <div>
               <h4 className="text-gray-900 mb-3 text-sm">Mensajes Dinámicos</h4>
               <div className="space-y-3">
-                <div className="p-3 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#50C878' }}>
+                <div className="p-3 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#7B4FA6' }}>
                   <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
                   <p className="text-white text-sm">¡Bienvenido a la aventura! Tu cuenta ha sido creada.</p>
                 </div>
-                <div className="p-3 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#50C878' }}>
+                <div className="p-3 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#7B4FA6' }}>
                   <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
                   <p className="text-white text-sm">¡Bienvenido de nuevo, aventurero!</p>
                 </div>
@@ -139,7 +139,7 @@ export function AuthDemo() {
                   <Shield className="w-5 h-5 text-white flex-shrink-0" />
                   <p className="text-white text-sm">Información incorrecta. Verifica tu email y contraseña.</p>
                 </div>
-                <div className="p-3 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#50C878' }}>
+                <div className="p-3 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#7B4FA6' }}>
                   <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
                   <p className="text-white text-sm">¡Cuenta activada correctamente! Tu viaje puede continuar.</p>
                 </div>

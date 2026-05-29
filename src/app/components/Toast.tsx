@@ -25,7 +25,7 @@ export function Toast({ message, type = 'error', isVisible = true, onClose }: To
       case 'success':
         return {
           icon: CheckCircle,
-          bg: '#50C878',
+          bg: '#7B4FA6',
           iconColor: '#fff'
         };
       case 'error':

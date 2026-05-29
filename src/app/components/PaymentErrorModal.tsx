@@ -107,7 +107,7 @@ export function PaymentErrorModal({
           {/* Información adicional según el tipo de error */}
           <div 
             className="rounded-lg p-4 mb-6"
-            style={{ backgroundColor: '#FEF3C7', borderLeft: '4px solid #F0E68C' }}
+            style={{ backgroundColor: '#FEF3C7', borderLeft: '4px solid #C9A84C' }}
           >
             <div className="flex gap-3">
               <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#92400E' }} />
@@ -169,7 +169,7 @@ export function PaymentErrorModal({
             <button
               onClick={onRetry}
               className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-lg flex items-center justify-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <RotateCcw className="w-5 h-5" />
               Reintentar pago
@@ -203,7 +203,7 @@ export function PaymentErrorModal({
         >
           <p className="text-xs text-gray-600">
             ¿Necesitas ayuda? Contacta a{' '}
-            <a href="mailto:soporte@tonalli.com" className="underline" style={{ color: '#50C878' }}>
+            <a href="mailto:soporte@tonalli.com" className="underline" style={{ color: '#7B4FA6' }}>
               soporte@tonalli.com
             </a>
           </p>

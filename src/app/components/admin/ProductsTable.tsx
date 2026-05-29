@@ -30,8 +30,8 @@ export function ProductsTable({ products, onEdit, onDelete, onAdjustStock }: Pro
   const getStockStatus = (stock?: number) => {
     const actualStock = stock ?? 0;
     if (actualStock === 0) return { color: '#FF4C4C', text: 'Agotado', icon: AlertCircle };
-    if (actualStock <= 5) return { color: '#F0E68C', text: 'Bajo', icon: AlertCircle };
-    return { color: '#50C878', text: 'Disponible', icon: CheckCircle };
+    if (actualStock <= 5) return { color: '#C9A84C', text: 'Bajo', icon: AlertCircle };
+    return { color: '#7B4FA6', text: 'Disponible', icon: CheckCircle };
   };
 
   const getCategoryIcon = (category: string) => {
@@ -144,7 +144,7 @@ export function ProductsTable({ products, onEdit, onDelete, onAdjustStock }: Pro
                         className="p-2 rounded-lg transition-colors hover:bg-gray-100"
                         title="Ajustar stock"
                       >
-                        <Package className="w-4 h-4" style={{ color: '#50C878' }} />
+                        <Package className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                       </button>
                       <button
                         onClick={() => handleDeleteClick(product)}

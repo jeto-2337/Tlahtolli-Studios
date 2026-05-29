@@ -76,7 +76,7 @@ export function EmailDashboard({ onBack }: EmailDashboardProps) {
   }).length;
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="mb-8">
@@ -109,9 +109,9 @@ export function EmailDashboard({ onBack }: EmailDashboardProps) {
             {activeRetries > 0 && (
               <div 
                 className="p-4 rounded-lg border flex items-start gap-3"
-                style={{ backgroundColor: '#F0E68C' + '20', borderColor: '#F0E68C' }}
+                style={{ backgroundColor: '#C9A84C' + '20', borderColor: '#C9A84C' }}
               >
-                <Zap className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#F0E68C' }} />
+                <Zap className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#C9A84C' }} />
                 <div>
                   <p className="text-sm mb-1" style={{ color: '#666' }}>
                     <strong>Reinvocaciones en Curso</strong>
@@ -205,7 +205,7 @@ export function EmailDashboard({ onBack }: EmailDashboardProps) {
               onClick={handleTestEmail}
               disabled={isSendingTest}
               className="px-6 py-3 rounded-lg text-white transition-all hover:shadow-md flex items-center gap-2 disabled:opacity-50"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <Send className={`w-5 h-5 ${isSendingTest ? 'animate-pulse' : ''}`} />
               {isSendingTest ? 'Enviando...' : 'Enviar Correo de Prueba'}

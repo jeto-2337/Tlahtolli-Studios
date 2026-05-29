@@ -81,7 +81,7 @@ export function ShippingMethodStep({ onComplete, initialMethod, shippingAddress 
         </div>
 
         {shippingAddress && (
-          <div className="mb-6 p-4 rounded-lg" style={{ backgroundColor: '#F0E68C' }}>
+          <div className="mb-6 p-4 rounded-lg" style={{ backgroundColor: '#C9A84C' }}>
             <p className="text-sm text-gray-700">
               <strong>Destino:</strong> {shippingAddress.municipality}, {shippingAddress.state} - CP {shippingAddress.zipCode}
             </p>
@@ -127,7 +127,7 @@ export function ShippingMethodStep({ onComplete, initialMethod, shippingAddress 
             })}
           </div>
 
-          <div className="p-4 rounded-lg" style={{ backgroundColor: '#FFFDD0' }}>
+          <div className="p-4 rounded-lg" style={{ backgroundColor: '#F4F0F8' }}>
             <p className="text-xs text-gray-600">
               💡 Tip: Los envíos superiores a $500 MXN tienen envío estándar gratuito
             </p>
@@ -136,7 +136,7 @@ export function ShippingMethodStep({ onComplete, initialMethod, shippingAddress 
           <button
             type="submit"
             className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <Sparkles className="w-5 h-5" />
             Continuar a método de pago

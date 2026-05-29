@@ -25,7 +25,7 @@ export function EmailMetricsPanel({ metrics }: EmailMetricsPanelProps) {
         <div className="bg-white rounded-lg shadow-sm p-6">
           <div className="flex items-center justify-between mb-2">
             <p className="text-sm text-gray-600">Enviados</p>
-            <CheckCircle className="w-5 h-5" style={{ color: '#50C878' }} />
+            <CheckCircle className="w-5 h-5" style={{ color: '#7B4FA6' }} />
           </div>
           <p className="text-2xl text-gray-900 mb-1">{metrics.totalSent}</p>
           <p className="text-xs text-gray-500">
@@ -47,7 +47,7 @@ export function EmailMetricsPanel({ metrics }: EmailMetricsPanelProps) {
         <div className="bg-white rounded-lg shadow-sm p-6">
           <div className="flex items-center justify-between mb-2">
             <p className="text-sm text-gray-600">Reintentando</p>
-            <RefreshCw className="w-5 h-5" style={{ color: '#F0E68C' }} />
+            <RefreshCw className="w-5 h-5" style={{ color: '#C9A84C' }} />
           </div>
           <p className="text-2xl text-gray-900 mb-1">{metrics.totalRetrying}</p>
           <p className="text-xs text-gray-500">
@@ -71,7 +71,7 @@ export function EmailMetricsPanel({ metrics }: EmailMetricsPanelProps) {
       <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-white rounded-lg shadow-sm p-6">
           <div className="flex items-center gap-2 mb-4">
-            <TrendingUp className="w-5 h-5" style={{ color: '#50C878' }} />
+            <TrendingUp className="w-5 h-5" style={{ color: '#7B4FA6' }} />
             <h3 className="text-gray-900">Tasa de Éxito</h3>
           </div>
           <div className="relative pt-1">
@@ -79,7 +79,7 @@ export function EmailMetricsPanel({ metrics }: EmailMetricsPanelProps) {
               <div>
                 <span 
                   className="text-3xl inline-block"
-                  style={{ color: metrics.successRate >= 90 ? '#50C878' : metrics.successRate >= 70 ? '#F0E68C' : '#FF4C4C' }}
+                  style={{ color: metrics.successRate >= 90 ? '#7B4FA6' : metrics.successRate >= 70 ? '#C9A84C' : '#FF4C4C' }}
                 >
                   {formatPercentage(metrics.successRate)}
                 </span>
@@ -89,7 +89,7 @@ export function EmailMetricsPanel({ metrics }: EmailMetricsPanelProps) {
               <div
                 style={{
                   width: `${metrics.successRate}%`,
-                  backgroundColor: metrics.successRate >= 90 ? '#50C878' : metrics.successRate >= 70 ? '#F0E68C' : '#FF4C4C'
+                  backgroundColor: metrics.successRate >= 90 ? '#7B4FA6' : metrics.successRate >= 70 ? '#C9A84C' : '#FF4C4C'
                 }}
                 className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center transition-all duration-500"
               />
@@ -143,7 +143,7 @@ export function EmailMetricsPanel({ metrics }: EmailMetricsPanelProps) {
                   </div>
                   <div className="flex items-center gap-4 text-sm">
                     <span className="text-gray-600">
-                      <span style={{ color: '#50C878' }}>{count}</span> / {total}
+                      <span style={{ color: '#7B4FA6' }}>{count}</span> / {total}
                     </span>
                     <span className="text-gray-500">{formatPercentage(successRate)}</span>
                   </div>
@@ -152,7 +152,7 @@ export function EmailMetricsPanel({ metrics }: EmailMetricsPanelProps) {
                   <div
                     style={{
                       width: `${successRate}%`,
-                      backgroundColor: '#50C878'
+                      backgroundColor: '#7B4FA6'
                     }}
                     className="h-full transition-all duration-500"
                   />

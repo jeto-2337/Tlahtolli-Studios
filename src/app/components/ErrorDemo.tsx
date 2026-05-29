@@ -15,7 +15,7 @@ export function ErrorDemo() {
   };
 
   return (
-    <div className="min-h-screen py-12 px-4" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen py-12 px-4" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-2xl mx-auto">
         <h1 className="text-center text-gray-900 mb-8">Demo de Manejo de Errores</h1>
         
@@ -24,7 +24,7 @@ export function ErrorDemo() {
             <button
               onClick={handleTriggerError}
               className="px-6 py-3 rounded-lg text-white"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               Simular Error
             </button>

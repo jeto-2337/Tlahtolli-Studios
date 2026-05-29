@@ -74,7 +74,7 @@ export function Cart({
               <button
                 onClick={onClose}
                 className="px-6 py-3 rounded-lg text-white"
-                style={{ backgroundColor: '#50C878' }}
+                style={{ backgroundColor: '#7B4FA6' }}
               >
                 Explorar productos
               </button>
@@ -95,7 +95,7 @@ export function Cart({
                     <h3 className="text-gray-900 mb-1 truncate">{item.name}</h3>
                     <div className="text-sm text-gray-600 mb-2">${item.price} MXN</div>
                     <div className="flex items-center gap-2">
-                      <div className="text-xs px-2 py-1 rounded" style={{ backgroundColor: '#F0E68C' }}>
+                      <div className="text-xs px-2 py-1 rounded" style={{ backgroundColor: '#C9A84C' }}>
                         {item.status}
                       </div>
                     </div>
@@ -159,7 +159,7 @@ export function Cart({
               <button
                 onClick={onCheckout}
                 className="w-full px-6 py-3 text-white rounded-lg hover:opacity-90 transition-all"
-                style={{ backgroundColor: '#50C878' }}
+                style={{ backgroundColor: '#7B4FA6' }}
               >
                 Continuar con el método de pago
               </button>

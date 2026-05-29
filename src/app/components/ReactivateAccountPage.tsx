@@ -51,7 +51,7 @@ export function ReactivateAccountPage({ onSuccess, onBackToLogin }: ReactivateAc
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-md w-full space-y-8">
         <button
           onClick={onBackToLogin}
@@ -62,7 +62,7 @@ export function ReactivateAccountPage({ onSuccess, onBackToLogin }: ReactivateAc
         </button>
 
         <div className="text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4" style={{ backgroundColor: '#50C878' }}>
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4" style={{ backgroundColor: '#7B4FA6' }}>
             <RefreshCw className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-gray-900 mb-2">Reactivar Cuenta</h1>
@@ -75,7 +75,7 @@ export function ReactivateAccountPage({ onSuccess, onBackToLogin }: ReactivateAc
 
         <div className="bg-white rounded-lg shadow-sm p-8">
           {successMessage && (
-            <div className="mb-6 p-4 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#50C878' }}>
+            <div className="mb-6 p-4 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#7B4FA6' }}>
               <Sparkles className="w-5 h-5 text-white" />
               <p className="text-white text-sm">{successMessage}</p>
             </div>
@@ -116,7 +116,7 @@ export function ReactivateAccountPage({ onSuccess, onBackToLogin }: ReactivateAc
               type="submit"
               disabled={isLoading}
               className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               {isLoading ? (
                 <>

@@ -76,7 +76,7 @@ export function OutOfStockProduct({
   };
 
   return (
-    <div className="min-h-screen py-8" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen py-8" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Producto agotado */}
         <div className="max-w-4xl mx-auto mb-12">
@@ -143,7 +143,7 @@ export function OutOfStockProduct({
                   {showNotificationSuccess && (
                     <div 
                       className="p-4 rounded-lg mb-6 flex items-center gap-3 animate-fade-in"
-                      style={{ backgroundColor: '#50C878' }}
+                      style={{ backgroundColor: '#7B4FA6' }}
                     >
                       <CheckCircle className="w-5 h-5 text-white" />
                       <p className="text-white text-sm">
@@ -156,7 +156,7 @@ export function OutOfStockProduct({
                   {addedToCart && (
                     <div 
                       className="p-4 rounded-lg mb-6 flex items-center gap-3 animate-fade-in"
-                      style={{ backgroundColor: '#50C878' }}
+                      style={{ backgroundColor: '#7B4FA6' }}
                     >
                       <CheckCircle className="w-5 h-5 text-white" />
                       <p className="text-white text-sm">
@@ -208,9 +208,9 @@ export function OutOfStockProduct({
             <>
               <div className="text-center mb-8">
                 <div className="flex items-center justify-center gap-3 mb-2">
-                  <Sparkles className="w-6 h-6" style={{ color: '#50C878' }} />
+                  <Sparkles className="w-6 h-6" style={{ color: '#7B4FA6' }} />
                   <h2 className="text-gray-900">Tesoros Alternativos</h2>
-                  <Sparkles className="w-6 h-6" style={{ color: '#50C878' }} />
+                  <Sparkles className="w-6 h-6" style={{ color: '#7B4FA6' }} />
                 </div>
                 <p className="text-gray-600 flex items-center justify-center gap-2">
                   <span>✦</span>

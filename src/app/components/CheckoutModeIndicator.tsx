@@ -26,7 +26,7 @@ export function CheckoutModeIndicator({
           <>
             <div 
               className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <UserCheck className="w-5 h-5 text-white" />
             </div>
@@ -39,15 +39,15 @@ export function CheckoutModeIndicator({
               </p>
               <div className="mt-3 space-y-1.5 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#50C878' }}></span>
+                  <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#7B4FA6' }}></span>
                   <span>Historial de pedidos guardado</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#50C878' }}></span>
+                  <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#7B4FA6' }}></span>
                   <span>Seguimiento de órdenes en tu panel</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#50C878' }}></span>
+                  <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#7B4FA6' }}></span>
                   <span>Datos de envío guardados para futuras compras</span>
                 </div>
               </div>

@@ -14,7 +14,7 @@ import {
 
 export function PaymentDemo() {
   return (
-    <div className="min-h-screen py-12 px-4" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen py-12 px-4" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-gray-900 mb-4">Sistema de Pagos - TONALLI-006</h1>
@@ -28,7 +28,7 @@ export function PaymentDemo() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div 
               className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <MapPin className="w-6 h-6 text-white" />
             </div>
@@ -38,15 +38,15 @@ export function PaymentDemo() {
             </p>
             <ul className="space-y-2 text-xs text-gray-600">
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>9 regiones soportadas</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Métodos por país/zona</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Moneda localizada</span>
               </li>
             </ul>
@@ -65,15 +65,15 @@ export function PaymentDemo() {
             </p>
             <ul className="space-y-2 text-xs text-gray-600">
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Tarjetas de crédito/débito</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>PayPal, Stripe, Mercado Pago</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>OXXO, SPEI, transferencias</span>
               </li>
             </ul>
@@ -82,7 +82,7 @@ export function PaymentDemo() {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div 
               className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
-              style={{ backgroundColor: '#F0E68C' }}
+              style={{ backgroundColor: '#C9A84C' }}
             >
               <Shield className="w-6 h-6 text-gray-700" />
             </div>
@@ -92,15 +92,15 @@ export function PaymentDemo() {
             </p>
             <ul className="space-y-2 text-xs text-gray-600">
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Encriptación SSL 256-bit</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Certificación PCI DSS</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4" style={{ color: '#50C878' }} />
+                <CheckCircle className="w-4 h-4" style={{ color: '#7B4FA6' }} />
                 <span>Sin almacenamiento de datos</span>
               </li>
             </ul>
@@ -117,7 +117,7 @@ export function PaymentDemo() {
                 <div className="flex items-center gap-3">
                   <div 
                     className="px-4 py-2 rounded-full flex items-center gap-2"
-                    style={{ backgroundColor: '#F0E68C' + '40', color: '#B8860B' }}
+                    style={{ backgroundColor: '#C9A84C' + '40', color: '#B8860B' }}
                   >
                     <Crown className="w-4 h-4" />
                     <span className="text-sm">Recomendado</span>
@@ -137,7 +137,7 @@ export function PaymentDemo() {
                 <div className="flex items-center gap-3">
                   <div 
                     className="px-4 py-2 rounded-full flex items-center gap-2"
-                    style={{ backgroundColor: '#50C878' + '40', color: '#50C878' }}
+                    style={{ backgroundColor: '#7B4FA6' + '40', color: '#7B4FA6' }}
                   >
                     <Shield className="w-4 h-4" />
                     <span className="text-sm">Seguro</span>
@@ -166,7 +166,7 @@ export function PaymentDemo() {
                       <div className="text-2xl">💳</div>
                       <span className="text-sm text-gray-900">Método Disponible</span>
                     </div>
-                    <CheckCircle className="w-5 h-5" style={{ color: '#50C878' }} />
+                    <CheckCircle className="w-5 h-5" style={{ color: '#7B4FA6' }} />
                   </div>
                 </div>
                 <div className="p-4 rounded-lg bg-gray-50 border-2 border-gray-200 opacity-60">
@@ -196,7 +196,7 @@ export function PaymentDemo() {
               <h4 className="text-gray-900 text-sm">Pago Exitoso</h4>
               <div 
                 className="p-4 rounded-lg"
-                style={{ backgroundColor: '#50C878' }}
+                style={{ backgroundColor: '#7B4FA6' }}
               >
                 <div className="flex items-center gap-3 text-white mb-2">
                   <CheckCircle className="w-6 h-6" />

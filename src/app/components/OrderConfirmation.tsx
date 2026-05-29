@@ -22,12 +22,12 @@ export function OrderConfirmation({
   onTrackOrder
 }: OrderConfirmationProps) {
   return (
-    <div className="min-h-screen py-12" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen py-12" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-2xl mx-auto px-4">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 relative" style={{ backgroundColor: '#50C878' }}>
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 relative" style={{ backgroundColor: '#7B4FA6' }}>
             <Package className="w-12 h-12 text-white" />
-            <CheckCircle className="w-8 h-8 text-white absolute -bottom-2 -right-2" style={{ backgroundColor: '#50C878' }} />
+            <CheckCircle className="w-8 h-8 text-white absolute -bottom-2 -right-2" style={{ backgroundColor: '#7B4FA6' }} />
           </div>
           <h1 className="text-gray-900 mb-2">¡Pedido exitoso!</h1>
           <p className="text-gray-600 flex items-center justify-center gap-2">
@@ -74,7 +74,7 @@ export function OrderConfirmation({
               <span className="text-gray-600">Estado:</span>
               <span 
                 className="px-2 py-1 rounded text-xs"
-                style={{ backgroundColor: '#F0E68C' }}
+                style={{ backgroundColor: '#C9A84C' }}
               >
                 Pendiente de envío
               </span>
@@ -114,7 +114,7 @@ export function OrderConfirmation({
           <button
             onClick={onBackToHome}
             className="flex-1 px-6 py-3 rounded-lg text-white transition-all hover:shadow-md"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             Volver a la tienda
           </button>

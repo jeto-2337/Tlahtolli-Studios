@@ -70,7 +70,7 @@ export function RestockNotificationModal({ product, onClose, onSuccess }: Restoc
         <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-8 text-center">
           <div 
             className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <CheckCircle className="w-8 h-8 text-white" />
           </div>
@@ -90,7 +90,7 @@ export function RestockNotificationModal({ product, onClose, onSuccess }: Restoc
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div 
         className="rounded-lg shadow-xl max-w-md w-full"
-        style={{ backgroundColor: '#FFFDD0' }}
+        style={{ backgroundColor: '#F4F0F8' }}
       >
         {/* Header */}
         <div className="p-6 border-b flex items-center justify-between">

@@ -41,7 +41,7 @@ export function EmailTemplatesPanel({ onBack }: EmailTemplatesPanelProps) {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="mb-8 flex items-center justify-between">
@@ -78,7 +78,7 @@ export function EmailTemplatesPanel({ onBack }: EmailTemplatesPanelProps) {
             <button
               onClick={handleSave}
               className="px-4 py-2 rounded-lg text-white transition-all hover:shadow-md flex items-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <Save className="w-4 h-4" />
               Guardar
@@ -106,7 +106,7 @@ export function EmailTemplatesPanel({ onBack }: EmailTemplatesPanelProps) {
                     <div
                       className="w-10 h-10 rounded-full flex items-center justify-center"
                       style={{
-                        backgroundColor: selectedTemplate === template.id ? '#50C878' : '#F0F0F0'
+                        backgroundColor: selectedTemplate === template.id ? '#7B4FA6' : '#F0F0F0'
                       }}
                     >
                       <Icon className={`w-5 h-5 ${selectedTemplate === template.id ? 'text-white' : 'text-gray-600'}`} />

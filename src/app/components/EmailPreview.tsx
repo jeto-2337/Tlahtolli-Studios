@@ -34,9 +34,9 @@ export function EmailPreview({
           </button>
         </div>
         
-        <div className="p-8" style={{ backgroundColor: '#FFFDD0' }}>
+        <div className="p-8" style={{ backgroundColor: '#F4F0F8' }}>
           <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div className="text-center py-8 px-6" style={{ backgroundColor: '#50C878' }}>
+            <div className="text-center py-8 px-6" style={{ backgroundColor: '#7B4FA6' }}>
               <div className="flex items-center justify-center gap-2 mb-3">
                 <Sword className="w-8 h-8 text-white" />
                 <span className="text-white text-2xl">Epic Quest Store</span>
@@ -49,7 +49,7 @@ export function EmailPreview({
             
             <div className="p-6 space-y-6">
               <div className="text-center">
-                <div className="inline-block px-4 py-2 rounded-lg mb-2" style={{ backgroundColor: '#F0E68C' }}>
+                <div className="inline-block px-4 py-2 rounded-lg mb-2" style={{ backgroundColor: '#C9A84C' }}>
                   <span className="text-gray-900">Pedido #{orderNumber}</span>
                 </div>
                 <p className="text-gray-600">
@@ -68,7 +68,7 @@ export function EmailPreview({
                 </div>
                 <div 
                   className="inline-block px-3 py-1 rounded text-sm"
-                  style={{ backgroundColor: '#F0E68C' }}
+                  style={{ backgroundColor: '#C9A84C' }}
                 >
                   Pendiente de envío
                 </div>
@@ -128,7 +128,7 @@ export function EmailPreview({
               <div className="text-center pt-4">
                 <button 
                   className="px-6 py-3 rounded-lg text-white transition-all hover:shadow-md"
-                  style={{ backgroundColor: '#50C878' }}
+                  style={{ backgroundColor: '#7B4FA6' }}
                 >
                   Rastrear mi pedido
                 </button>

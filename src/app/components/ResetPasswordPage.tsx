@@ -119,8 +119,8 @@ export function ResetPasswordPage({ token, onSuccess, onTokenExpired }: ResetPas
     if (!passwordValidation.strength) return '#9CA3AF';
     switch (passwordValidation.strength) {
       case 'weak': return '#FF4C4C';
-      case 'medium': return '#F0E68C';
-      case 'strong': return '#50C878';
+      case 'medium': return '#C9A84C';
+      case 'strong': return '#7B4FA6';
       default: return '#9CA3AF';
     }
   };
@@ -138,7 +138,7 @@ export function ResetPasswordPage({ token, onSuccess, onTokenExpired }: ResetPas
   // Mostrar loading mientras se valida el token
   if (isValidatingToken) {
     return (
-      <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#FFFDD0' }}>
+      <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#F4F0F8' }}>
         <div className="max-w-md w-full text-center">
           <div 
             className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 relative"
@@ -148,9 +148,9 @@ export function ResetPasswordPage({ token, onSuccess, onTokenExpired }: ResetPas
           </div>
           <h2 className="text-gray-900 mb-2">Validando enlace...</h2>
           <div className="flex items-center justify-center gap-2">
-            <div className="w-2 h-2 rounded-full animate-bounce" style={{ backgroundColor: '#50C878', animationDelay: '0ms' }}></div>
+            <div className="w-2 h-2 rounded-full animate-bounce" style={{ backgroundColor: '#7B4FA6', animationDelay: '0ms' }}></div>
             <div className="w-2 h-2 rounded-full animate-bounce" style={{ backgroundColor: '#73C2FB', animationDelay: '150ms' }}></div>
-            <div className="w-2 h-2 rounded-full animate-bounce" style={{ backgroundColor: '#F0E68C', animationDelay: '300ms' }}></div>
+            <div className="w-2 h-2 rounded-full animate-bounce" style={{ backgroundColor: '#C9A84C', animationDelay: '300ms' }}></div>
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@ export function ResetPasswordPage({ token, onSuccess, onTokenExpired }: ResetPas
 
   if (!tokenValid) {
     return (
-      <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#FFFDD0' }}>
+      <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#F4F0F8' }}>
         <div className="max-w-md w-full">
           <div className="text-center mb-8">
             <div 
@@ -182,12 +182,12 @@ export function ResetPasswordPage({ token, onSuccess, onTokenExpired }: ResetPas
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen flex items-center justify-center py-12 px-4" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <div 
             className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 relative"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <KeyRound className="w-8 h-8 text-white" />
             <div 
@@ -207,7 +207,7 @@ export function ResetPasswordPage({ token, onSuccess, onTokenExpired }: ResetPas
 
         <div className="bg-white rounded-lg shadow-sm p-8">
           {successMessage && (
-            <div className="mb-6 p-4 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#50C878' }}>
+            <div className="mb-6 p-4 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#7B4FA6' }}>
               <CheckCircle className="w-5 h-5 text-white" />
               <div className="text-white">
                 <p className="text-sm mb-1"><strong>¡Tu acceso ha sido restaurado!</strong></p>
@@ -335,7 +335,7 @@ export function ResetPasswordPage({ token, onSuccess, onTokenExpired }: ResetPas
                 type="submit"
                 disabled={isLoading || !passwordValidation.isValid}
                 className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                style={{ backgroundColor: '#50C878' }}
+                style={{ backgroundColor: '#7B4FA6' }}
               >
                 {isLoading ? (
                   <>

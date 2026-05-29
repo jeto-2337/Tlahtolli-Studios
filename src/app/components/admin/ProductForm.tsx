@@ -472,7 +472,7 @@ export function ProductForm({ product, onSave, onCancel }: ProductFormProps) {
         {showSuccess && (
           <div 
             className="p-4 rounded-lg flex items-center gap-3"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <CheckCircle className="w-5 h-5 text-white" />
             <p className="text-white">
@@ -486,7 +486,7 @@ export function ProductForm({ product, onSave, onCancel }: ProductFormProps) {
           <button
             type="submit"
             className="flex-1 px-6 py-3 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <Save className="w-5 h-5" />
             {product ? 'Actualizar Tesoro' : 'Guardar Tesoro'}

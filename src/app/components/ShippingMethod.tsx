@@ -79,7 +79,7 @@ export function ShippingMethod({ onComplete }: ShippingMethodProps) {
       <button
         type="submit"
         className="w-full px-6 py-3 rounded-lg text-white transition-all hover:shadow-md"
-        style={{ backgroundColor: '#50C878' }}
+        style={{ backgroundColor: '#7B4FA6' }}
       >
         Continuar a pago
       </button>

@@ -28,7 +28,7 @@ export function TrackOrderPage({ onBack, onTrackOrder }: TrackOrderPageProps) {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <button
           onClick={onBack}
@@ -87,7 +87,7 @@ export function TrackOrderPage({ onBack, onTrackOrder }: TrackOrderPageProps) {
             <button
               type="submit"
               className="w-full px-6 py-3 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <Search className="w-5 h-5" />
               Rastrear Pedido

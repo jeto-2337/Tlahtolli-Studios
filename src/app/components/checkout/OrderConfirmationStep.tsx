@@ -232,7 +232,7 @@ export function OrderConfirmationStep({ orderData, items, onConfirm }: OrderConf
             onClick={handleConfirm}
             disabled={isProcessing}
             className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             {isProcessing ? (
               <>
@@ -327,7 +327,7 @@ export function OrderConfirmationStep({ orderData, items, onConfirm }: OrderConf
             <button
               onClick={() => setShowErrorModal(false)}
               className="w-full px-6 py-3 rounded-lg text-white transition-all hover:shadow-md"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               Entendido
             </button>

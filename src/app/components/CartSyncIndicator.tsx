@@ -25,7 +25,7 @@ export function CartSyncIndicator({ itemCount, userId }: CartSyncIndicatorProps)
     <div className="fixed bottom-4 right-4 z-40 animate-slide-in-right">
       <div
         className="flex items-center gap-2 px-4 py-2 rounded-lg shadow-lg text-white text-sm"
-        style={{ backgroundColor: '#50C878' }}
+        style={{ backgroundColor: '#7B4FA6' }}
       >
         {isGuest ? (
           <>

@@ -28,7 +28,7 @@ export function StockIndicator({ stock, size = 'md' }: StockIndicatorProps) {
       return {
         icon: CheckCircle,
         text: 'En stock',
-        color: '#50C878',
+        color: '#7B4FA6',
         bgColor: '#D1FAE5',
         textColor: '#059669'
       };

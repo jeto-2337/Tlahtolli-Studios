@@ -85,7 +85,7 @@ export function ProductCard({ product, onAddToCart, onViewDetails }: ProductCard
             <button
               onClick={toggleQuantitySelector}
               className="px-4 py-2 rounded-lg text-white transition-all hover:shadow-md flex items-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <ShoppingCart className="w-4 h-4" />
               Añadir
@@ -112,7 +112,7 @@ export function ProductCard({ product, onAddToCart, onViewDetails }: ProductCard
               <button
                 onClick={handleAddToCart}
                 className="px-3 py-2 rounded-lg text-white transition-all hover:shadow-md"
-                style={{ backgroundColor: '#50C878' }}
+                style={{ backgroundColor: '#7B4FA6' }}
               >
                 <ShoppingCart className="w-4 h-4" />
               </button>

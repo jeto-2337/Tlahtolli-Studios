@@ -20,7 +20,7 @@ export function PaymentProcessingModal({ isOpen }: PaymentProcessingModalProps) 
             >
               <Loader2 
                 className="w-12 h-12 animate-spin" 
-                style={{ color: '#50C878' }} 
+                style={{ color: '#7B4FA6' }} 
               />
             </div>
             <div 
@@ -55,7 +55,7 @@ export function PaymentProcessingModal({ isOpen }: PaymentProcessingModalProps) 
           </div>
 
           <div className="flex items-center gap-3 p-3 rounded-lg" style={{ backgroundColor: '#ECFDF5' }}>
-            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#50C878' }}>
+            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#7B4FA6' }}>
               <CreditCard className="w-4 h-4 text-white" />
             </div>
             <div className="flex-1">

@@ -100,10 +100,10 @@ export function PaymentProcessing({
         <div className="text-center mb-8">
           <div 
             className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 relative"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <CheckCircle className="w-10 h-10 text-white" />
-            <div className="absolute inset-0 rounded-full animate-ping opacity-25" style={{ backgroundColor: '#50C878' }} />
+            <div className="absolute inset-0 rounded-full animate-ping opacity-25" style={{ backgroundColor: '#7B4FA6' }} />
           </div>
           <h2 className="text-gray-900 mb-2">¡Pago Exitoso!</h2>
           <p className="text-gray-600 flex items-center justify-center gap-2">
@@ -116,10 +116,10 @@ export function PaymentProcessing({
         <div className="bg-white rounded-lg shadow-sm p-8 mb-6">
           <div 
             className="p-6 rounded-lg mb-6"
-            style={{ backgroundColor: '#50C878' + '20' }}
+            style={{ backgroundColor: '#7B4FA6' + '20' }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <Sparkles className="w-6 h-6" style={{ color: '#50C878' }} />
+              <Sparkles className="w-6 h-6" style={{ color: '#7B4FA6' }} />
               <div>
                 <p className="text-sm text-gray-600">Código de pedido</p>
                 <p className="text-gray-900">{orderId}</p>
@@ -133,7 +133,7 @@ export function PaymentProcessing({
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <TrendingUp className="w-6 h-6" style={{ color: '#50C878' }} />
+              <TrendingUp className="w-6 h-6" style={{ color: '#7B4FA6' }} />
               <div>
                 <p className="text-sm text-gray-600">Monto</p>
                 <p className="text-gray-900">${amount.toFixed(2)}</p>
@@ -207,7 +207,7 @@ export function PaymentProcessing({
 
           <div 
             className="p-4 rounded-lg border mb-6"
-            style={{ backgroundColor: '#F0E68C' + '40', borderColor: '#F0E68C' }}
+            style={{ backgroundColor: '#C9A84C' + '40', borderColor: '#C9A84C' }}
           >
             <div className="flex items-start gap-3">
               <AlertCircle className="w-5 h-5 flex-shrink-0 text-gray-700" />
@@ -241,7 +241,7 @@ export function PaymentProcessing({
             <button
               onClick={onChangeMethod}
               className="px-6 py-3 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <ArrowLeft className="w-5 h-5" />
               Cambiar método
@@ -257,7 +257,7 @@ export function PaymentProcessing({
       <div className="text-center mb-8">
         <div 
           className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4"
-          style={{ backgroundColor: '#50C878' }}
+          style={{ backgroundColor: '#7B4FA6' }}
         >
           <CreditCard className="w-8 h-8 text-white" />
         </div>
@@ -337,7 +337,7 @@ export function PaymentProcessing({
             onClick={handlePayment}
             disabled={isProcessing}
             className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-            style={{ backgroundColor: '#50C878' }}
+            style={{ backgroundColor: '#7B4FA6' }}
           >
             <Sparkles className="w-5 h-5" />
             Realizar Pago Seguro

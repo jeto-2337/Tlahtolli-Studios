@@ -84,9 +84,9 @@ export function EmailLogsPanel({ onBack }: EmailLogsPanelProps) {
   const getStatusIcon = (status: string) => {
     switch (status) {
       case 'sent':
-        return <CheckCircle className="w-5 h-5" style={{ color: '#50C878' }} />;
+        return <CheckCircle className="w-5 h-5" style={{ color: '#7B4FA6' }} />;
       case 'retrying':
-        return <Clock className="w-5 h-5" style={{ color: '#F0E68C' }} />;
+        return <Clock className="w-5 h-5" style={{ color: '#C9A84C' }} />;
       case 'failed':
         return <XCircle className="w-5 h-5" style={{ color: '#FF4C4C' }} />;
       default:
@@ -112,7 +112,7 @@ export function EmailLogsPanel({ onBack }: EmailLogsPanelProps) {
   });
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FFFDD0' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F4F0F8' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="mb-8 flex items-center justify-between">
@@ -234,7 +234,7 @@ export function EmailLogsPanel({ onBack }: EmailLogsPanelProps) {
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                       {log.attempts}
                       {log.error && (
-                        <AlertTriangle className="w-4 h-4 inline ml-2" style={{ color: '#F0E68C' }} />
+                        <AlertTriangle className="w-4 h-4 inline ml-2" style={{ color: '#C9A84C' }} />
                       )}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
@@ -299,11 +299,11 @@ export function EmailLogsPanel({ onBack }: EmailLogsPanelProps) {
                     {Array.from({ length: selectedLog.attempts }).map((_, index) => (
                       <div key={index} className="flex items-center gap-3 py-2 px-3 bg-gray-50 rounded">
                         {index === selectedLog.attempts - 1 && selectedLog.status === 'sent' ? (
-                          <CheckCircle className="w-5 h-5" style={{ color: '#50C878' }} />
+                          <CheckCircle className="w-5 h-5" style={{ color: '#7B4FA6' }} />
                         ) : index === selectedLog.attempts - 1 && selectedLog.status === 'failed' ? (
                           <XCircle className="w-5 h-5" style={{ color: '#FF4C4C' }} />
                         ) : (
-                          <Clock className="w-5 h-5" style={{ color: '#F0E68C' }} />
+                          <Clock className="w-5 h-5" style={{ color: '#C9A84C' }} />
                         )}
                         <div className="flex-1">
                           <p className="text-sm text-gray-900">Intento {index + 1}</p>
@@ -333,7 +333,7 @@ export function EmailLogsPanel({ onBack }: EmailLogsPanelProps) {
                 <button
                   onClick={() => setSelectedLog(null)}
                   className="px-4 py-2 rounded-lg text-white transition-all hover:shadow-md"
-                  style={{ backgroundColor: '#50C878' }}
+                  style={{ backgroundColor: '#7B4FA6' }}
                 >
                   Cerrar
                 </button>

@@ -167,7 +167,7 @@ export function PaymentDetailsForm({ selectedMethod, onComplete, onBack }: Payme
             <button
               onClick={handleSubmit}
               className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <ExternalLink className="w-5 h-5" />
               Continuar a confirmación
@@ -200,7 +200,7 @@ export function PaymentDetailsForm({ selectedMethod, onComplete, onBack }: Payme
           </p>
         </div>
 
-        <div className="mb-6 p-4 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#F0E68C' }}>
+        <div className="mb-6 p-4 rounded-lg flex items-center gap-3" style={{ backgroundColor: '#C9A84C' }}>
           <Lock className="w-5 h-5 text-gray-700" />
           <p className="text-sm text-gray-700">
             Tus datos están protegidos con encriptación de nivel bancario
@@ -322,7 +322,7 @@ export function PaymentDetailsForm({ selectedMethod, onComplete, onBack }: Payme
             </div>
           </div>
 
-          <div className="p-4 rounded-lg" style={{ backgroundColor: '#FFFDD0' }}>
+          <div className="p-4 rounded-lg" style={{ backgroundColor: '#F4F0F8' }}>
             <p className="text-xs text-gray-600 flex items-center gap-2">
               💡 <strong>Tip:</strong> El CVV son los 3 o 4 dígitos en el reverso de tu tarjeta
             </p>
@@ -332,7 +332,7 @@ export function PaymentDetailsForm({ selectedMethod, onComplete, onBack }: Payme
             <button
               type="submit"
               className="w-full px-6 py-4 rounded-lg text-white transition-all hover:shadow-md flex items-center justify-center gap-2"
-              style={{ backgroundColor: '#50C878' }}
+              style={{ backgroundColor: '#7B4FA6' }}
             >
               <Sparkles className="w-5 h-5" />
               Continuar a confirmación

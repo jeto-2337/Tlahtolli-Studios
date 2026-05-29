@@ -87,17 +87,17 @@ export function RestockSubscriptionsPanel({ onBack }: RestockSubscriptionsPanelP
           </div>
           <div 
             className="p-4 rounded-lg"
-            style={{ backgroundColor: '#50C878' + '20' }}
+            style={{ backgroundColor: '#7B4FA6' + '20' }}
           >
             <p className="text-sm text-gray-600 mb-1">Activas</p>
-            <p className="text-2xl" style={{ color: '#50C878' }}>{activeCount}</p>
+            <p className="text-2xl" style={{ color: '#7B4FA6' }}>{activeCount}</p>
           </div>
           <div 
             className="p-4 rounded-lg"
-            style={{ backgroundColor: '#F0E68C' + '20' }}
+            style={{ backgroundColor: '#C9A84C' + '20' }}
           >
             <p className="text-sm text-gray-600 mb-1">Notificadas</p>
-            <p className="text-2xl" style={{ color: '#F0E68C' }}>{notifiedCount}</p>
+            <p className="text-2xl" style={{ color: '#C9A84C' }}>{notifiedCount}</p>
           </div>
         </div>
 
@@ -121,7 +121,7 @@ export function RestockSubscriptionsPanel({ onBack }: RestockSubscriptionsPanelP
                 ? 'text-white' 
                 : 'border-2 text-gray-700'
             }`}
-            style={filter === 'active' ? { backgroundColor: '#50C878' } : { borderColor: '#E5E7EB' }}
+            style={filter === 'active' ? { backgroundColor: '#7B4FA6' } : { borderColor: '#E5E7EB' }}
           >
             Activas ({activeCount})
           </button>
@@ -132,7 +132,7 @@ export function RestockSubscriptionsPanel({ onBack }: RestockSubscriptionsPanelP
                 ? 'text-white' 
                 : 'border-2 text-gray-700'
             }`}
-            style={filter === 'notified' ? { backgroundColor: '#F0E68C' } : { borderColor: '#E5E7EB' }}
+            style={filter === 'notified' ? { backgroundColor: '#C9A84C' } : { borderColor: '#E5E7EB' }}
           >
             Notificadas ({notifiedCount})
           </button>
@@ -189,7 +189,7 @@ export function RestockSubscriptionsPanel({ onBack }: RestockSubscriptionsPanelP
                     {subscription.notified ? (
                       <span 
                         className="px-3 py-1 rounded-full text-xs flex items-center gap-1 w-fit"
-                        style={{ backgroundColor: '#F0E68C' + '40', color: '#B8860B' }}
+                        style={{ backgroundColor: '#C9A84C' + '40', color: '#B8860B' }}
                       >
                         <CheckCircle className="w-3 h-3" />
                         Notificada
@@ -197,7 +197,7 @@ export function RestockSubscriptionsPanel({ onBack }: RestockSubscriptionsPanelP
                     ) : (
                       <span 
                         className="px-3 py-1 rounded-full text-xs flex items-center gap-1 w-fit"
-                        style={{ backgroundColor: '#50C878' + '20', color: '#50C878' }}
+                        style={{ backgroundColor: '#7B4FA6' + '20', color: '#7B4FA6' }}
                       >
                         <Bell className="w-3 h-3" />
                         Activa
